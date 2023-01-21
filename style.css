@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, rgb(225, 17, 17) 50%, rgb(23, 16, 232) 50%);
+}
+
+.container {
+    height: 450px;
+    width: 330px;
+    background-image: url(https://img.freepik.com/premium-vector/standard-school-notebook-line-vector-background_231786-8844.jpg?w=2000);
+    background-repeat: repeat;
+    background-size: 1150px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#input {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #666;
+    color: #fff;
+    padding: 0 10px;
+    margin: 15px 0;
+}
+
+#input::placeholder {
+    color: #bbb;
+}
+
+ul li {
+    background: #eee;
+    color: #333;
+    height: 40px;
+    border-radius: 50px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+
+ul .fa-check, .fa-trash {
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-check {
+    right: 40px;
+    color: green;
+}
+
+ul .fa-trash {
+    right: 15px;
+    color: red;
+}
+
+ul .checked {
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+}
